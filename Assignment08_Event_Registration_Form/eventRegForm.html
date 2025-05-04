@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Registration</title>
+  <link href="bootstrap-5.3.5-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Event Registration Form</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5">
+        <form class="needs-validation" novalidate>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Name" required data-bs-toggle="tooltip" data-bs-placement="right" title="Enter your full name">
+            <label for="name">Full Name</label>
+            <div class="invalid-feedback">Name is required.</div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required data-bs-toggle="tooltip" data-bs-placement="right" title="Enter a valid email address">
+            <label for="email">Email address</label>
+            <div class="invalid-feedback">Valid email is required.</div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="tel" class="form-control" id="phone" placeholder="Phone" pattern="[0-9]{10}" required data-bs-toggle="tooltip" data-bs-placement="right" title="Enter a 10-digit phone number">
+            <label for="phone">Phone Number</label>
+            <div class="invalid-feedback">Enter a 10-digit phone number.</div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <select class="form-select" id="event" required data-bs-toggle="tooltip" data-bs-placement="right" title="Choose an event">
+              <option value="" disabled selected>Select an event</option>
+              <option>Web Development</option>
+              <option>AI Workshop</option>
+              <option>Hackathon</option>
+            </select>
+            <label for="event">Event</label>
+            <div class="invalid-feedback">Please select an event.</div>
+          </div>
+
+          <!-- Comments -->
+          <div class="col-12 form-floating mb-4">
+            <textarea class="form-control" placeholder="Leave your comment here" id="comments" style="height: 100px" data-bs-toggle="tooltip" data-bs-placement="top" title="Optional comments"></textarea>
+            <label for="comments">Comments (Optional)</label>
+          </div>
+
+          <button class="btn btn-primary w-100" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Tooltip activation
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(el => new bootstrap.Tooltip(el));
+
+    // Bootstrap form validation
+    (() => {
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', e => {
+          if (!form.checkValidity()) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

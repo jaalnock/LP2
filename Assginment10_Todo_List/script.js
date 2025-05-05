@@ -15,16 +15,8 @@ function fetchTasks() {
         // Create delete button
         const delBtn = document.createElement("button");
         delBtn.textContent = "Delete";
+        delBtn.className = "delete-btn";
         delBtn.onclick = () => deleteTask(task.id); // Assign task delete function
-
-        // Style for delete button (optional, can be customized)
-        delBtn.style.marginLeft = "10px";
-        delBtn.style.backgroundColor = "#dc3545";
-        delBtn.style.color = "white";
-        delBtn.style.border = "none";
-        delBtn.style.padding = "5px 10px";
-        delBtn.style.cursor = "pointer";
-        delBtn.style.borderRadius = "4px";
 
         li.appendChild(delBtn); // Append the delete button to the list item
         taskList.appendChild(li); // Append list item to the task list

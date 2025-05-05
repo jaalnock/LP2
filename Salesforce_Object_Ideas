@@ -1,0 +1,48 @@
+1. Student Management App
+Objects:
+
+Student: Name, Email.
+
+Course: Name, Description.
+
+Enrollment: Student Name, Course Name.
+
+
+2. Employee Management App
+Objects:
+
+Employee: Name, Department.
+
+Department: Name, Manager.
+
+Assignment: Employee Name, Department Name.
+
+
+3. Project Management App
+Objects:
+
+Project: Name, Start Date.
+
+Task: Name, Deadline.
+
+Task Assignment: Task Name, Project Name.
+
+
+4. Inventory Management App
+Objects:
+
+Product: Name, Price.
+
+Supplier: Name, Contact Info.
+
+Supply Order: Product Name, Supplier Name.
+
+
+5. Library Management App
+Objects:
+
+Book: Title, Author.
+
+Member: Name, Email.
+
+Issue: Book Title, Member Name.

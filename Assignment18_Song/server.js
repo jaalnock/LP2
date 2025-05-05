@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 mongoose.connect('mongodb://localhost:27017/music', {
     useNewUrlParser: true,
     useUnifiedTopology: true
-});
+}).then(console.log("Mongo Connected Successfully"));
 
 // Define the schema
 const songSchema = new mongoose.Schema({

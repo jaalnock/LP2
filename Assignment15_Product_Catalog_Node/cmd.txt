@@ -1,0 +1,9 @@
+Directly type this : 
+node server.js
+
+1. GET Request to Fetch Users
+curl http://localhost:3000/api/products
+
+**If above is not running : 
+npm init -y
+npm install express cors

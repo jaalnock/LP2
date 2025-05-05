@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery Mobile CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <style>
+    .poster {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+
+  <div data-role="header">
+    <h1>Movie Reviews</h1>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#movie1">Inception</a></li>
+      <li><a href="#movie2">The Dark Knight</a></li>
+      <li><a href="#movie3">Interstellar</a></li>
+      <li><a href="#movie4">The Grand Budapest Hotel</a></li>
+      <li><a href="#movie5">Coco</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- Movie Template -->
+<div data-role="page" id="movie1">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Inception</h1>
+  </div>
+  <div data-role="content">
+    <img src="https://via.placeholder.com/300x450?text=Inception+Poster" alt="Inception" class="poster" />
+    <p><strong>Genre:</strong> Sci-Fi, Thriller</p>
+    <p><strong>Summary:</strong> A skilled thief is given a chance to erase his criminal past if he can pull off the impossible task of planting an idea in someone’s mind.</p>
+    <p><strong>Review:</strong> A mind-bending, visually stunning film by Christopher Nolan that keeps you thinking long after the credits roll.</p>
+  </div>
+</div>
+
+<div data-role="page" id="movie2">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>The Dark Knight</h1>
+  </div>
+  <div data-role="content">
+    <img src="https://via.placeholder.com/300x450?text=The+Dark+Knight+Poster" alt="The Dark Knight" class="poster" />
+    <p><strong>Genre:</strong> Action, Crime, Drama</p>
+    <p><strong>Summary:</strong> Batman faces the Joker, a criminal mastermind who plunges Gotham into chaos in his quest to prove that anyone can be corrupted.</p>
+    <p><strong>Review:</strong> With a legendary performance by Heath Ledger, this film is not just a superhero movie but a modern crime epic.</p>
+  </div>
+</div>
+
+<div data-role="page" id="movie3">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Interstellar</h1>
+  </div>
+  <div data-role="content">
+    <img src="https://via.placeholder.com/300x450?text=Interstellar+Poster" alt="Interstellar" class="poster" />
+    <p><strong>Genre:</strong> Adventure, Drama, Sci-Fi</p>
+    <p><strong>Summary:</strong> A group of explorers travels through a wormhole in space in an attempt to ensure humanity’s survival.</p>
+    <p><strong>Review:</strong> A visually spectacular and emotionally powerful film exploring time, space, and love.</p>
+  </div>
+</div>
+
+<div data-role="page" id="movie4">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>The Grand Budapest Hotel</h1>
+  </div>
+  <div data-role="content">
+    <img src="https://via.placeholder.com/300x450?text=Grand+Budapest+Hotel" alt="Grand Budapest Hotel" class="poster" />
+    <p><strong>Genre:</strong> Comedy, Drama</p>
+    <p><strong>Summary:</strong> The story of a legendary concierge at a famous European hotel between the wars and his friendship with a young employee.</p>
+    <p><strong>Review:</strong> A quirky, stylish, and beautifully crafted film from Wes Anderson, filled with color and charm.</p>
+  </div>
+</div>
+
+<div data-role="page" id="movie5">
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Coco</h1>
+  </div>
+  <div data-role="content">
+    <img src="https://via.placeholder.com/300x450?text=Coco+Poster" alt="Coco" class="poster" />
+    <p><strong>Genre:</strong> Animation, Adventure, Family</p>
+    <p><strong>Summary:</strong> A young boy named Miguel embarks on a journey to the Land of the Dead to find his great-great-grandfather, a legendary musician.</p>
+    <p><strong>Review:</strong> Heartwarming, visually vibrant, and deeply emotional—Coco is a beautiful celebration of family and tradition.</p>
+  </div>
+</div>
+
+</body>
+</html>

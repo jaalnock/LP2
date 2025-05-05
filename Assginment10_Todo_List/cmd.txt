@@ -1,0 +1,17 @@
+To run backend:
+npm init -y
+npm i express cors
+node server.js
+
+To check for requests:
+1. GET all tasks
+curl http://localhost:3000/tasks
+
+2. POST (add a new task)
+curl -X POST http://localhost:3000/tasks -H "Content-Type: application/json" -d "{\"text\":\"Buy Groceries\"}"
+
+3. DELETE a task
+curl -X DELETE http://localhost:3000/tasks/1
+
+
+Server is running on port 3000

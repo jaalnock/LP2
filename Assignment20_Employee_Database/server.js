@@ -11,7 +11,6 @@ const port = 3000;
 app.use(bodyParser.json());
 
 // Connect to MongoDB (using a local database named 'employees')
-// mongoose.connect('mongodb+srv://jaalnock:admin@cluster0.t8d5tpp.mongodb.net/', {
 mongoose
   .connect("mongodb://localhost:27017/employees", {
     useNewUrlParser: true,

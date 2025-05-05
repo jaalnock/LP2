@@ -9,7 +9,6 @@ const port = 3000;
 app.use(bodyParser.json());
 
 // Connect to MongoDB and create database 'music'
-// mongoose.connect('mongodb+srv://jaalnock:admin@cluster0.t8d5tpp.mongodb.net/', {
 mongoose.connect('mongodb://localhost:27017/music', {
     useNewUrlParser: true,
     useUnifiedTopology: true

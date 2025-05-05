@@ -10,7 +10,6 @@ const port = 3000;
 // Middleware to parse JSON request bodies
 app.use(bodyParser.json());
 
-// mongoose.connect('mongodb+srv://jaalnock:admin@cluster0.t8d5tpp.mongodb.net/', {
   mongoose.connect('mongodb://localhost:27017/bookstore', {
     useNewUrlParser: true,
     useUnifiedTopology: true,

@@ -1,3 +1,5 @@
+mongoose.connect('mongodb+srv://jaalnock:admin@cluster0.t8d5tpp.mongodb.net/', {
+
 npm init -y
 npm i express mongoose body-parser
 

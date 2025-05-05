@@ -1,0 +1,49 @@
+Procedure:
+
+1. Go to VirtualBox settings for both VMs:
+
+Settings → Network → Adapter 1 → Attached to: Bridged Adapter
+
+2. Install required packages on both VMs:
+
+sudo apt install net-tools  
+sudo apt install openssh-server
+
+3. On vm2, start the SSH service and find the IP address:
+
+ifconfig  
+(Note down the IPv4 address, e.g., 192.168.0.111)
+
+4. On vm1, create a file:
+
+echo "This is the message from vm1" >> file1.txt
+
+5. On vm1, transfer the file to vm2:
+
+scp file1.txt ubuntu02@192.168.0.111:/home/ubuntu02
+
+6. On vm2, verify the file:
+
+cat file1.txt
+
+
+Commands for vm1 (username: ubuntu01):
+
+sudo apt install net-tools  
+sudo apt install openssh-server  
+
+echo "This is the message from vm1" >> file1.txt  
+
+scp file1.txt ubuntu02@192.168.0.111:/home/ubuntu02
+
+
+Commands for vm2 (username: ubuntu02):
+
+sudo apt install net-tools  
+sudo apt install openssh-server  
+
+ifconfig  
+
+ssh ubuntu02@192.168.0.111  
+
+cat file1.txt

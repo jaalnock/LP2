@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Grilled Salmon",
+    "price": "$18.99",
+    "image": "https://via.placeholder.com/250?text=Grilled+Salmon"
+  },
+  {
+    "id": 2,
+    "name": "Art of Dusk",
+    "price": "$320",
+    "image": "https://via.placeholder.com/250?text=Art+of+Dusk"
+  },
+  {
+    "id": 3,
+    "name": "Chocolate Mousse",
+    "price": "$7.50",
+    "image": "https://via.placeholder.com/250?text=Chocolate+Mousse"
+  }
+]

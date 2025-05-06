@@ -1,0 +1,9 @@
+1. To create new todo app(optional)
+ng new user-app --minimal --inline-style --skip-tests
+
+2. Install node modules
+npm i
+npm install -g @angular/cli
+
+3. Open(Run) the project
+ng serve --open
